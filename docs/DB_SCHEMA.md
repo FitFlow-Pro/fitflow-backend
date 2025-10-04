@@ -2,11 +2,25 @@
 
 ## Core Tables (Phase 1)
 
+## Phase 1 Tables
+
 ### users
-- id, email, password, role, created_at, updated_at
+- id (BIGINT, PK)
+- email (VARCHAR(255), UNIQUE)
+- password (VARCHAR(255))
+- role (ENUM: MEMBER, TRAINER, ADMIN)
+- created_at (TIMESTAMP)
+- updated_at (TIMESTAMP)
 
 ### members
-- id, user_id, first_name, last_name, phone, date_of_birth, join_date
+- id (BIGINT, PK)
+- user_id (BIGINT, FK to users)
+- first_name (VARCHAR(100))
+- last_name (VARCHAR(100))
+- phone (VARCHAR(20))
+- date_of_birth (DATE)
+- join_date (DATE)
+
 
 ### trainers
 - id, user_id, specialization, experience, bio, hourly_rate

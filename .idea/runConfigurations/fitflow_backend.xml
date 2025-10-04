@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FitflowBackendApplication" type="Application" factoryName="Application">
+    <envs>
+      <env name="DB_USERNAME" value="root" />
+      <env name="DB_PASSWORD" value="ekta1234" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.fitflow.FitflowBackendApplication" />
+    <module name="fitflow-backend" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
